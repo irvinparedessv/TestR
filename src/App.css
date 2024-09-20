@@ -20,10 +20,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
 }
 
+@media (max-width: 600px) {
+  .App-header {
+    font-size: calc(6px + 1vmin); /* Ajusta el tamaño según tus necesidades */
+  }
+}
 .App-link {
   color: #61dafb;
 }
