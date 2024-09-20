@@ -7,7 +7,7 @@ import { handleGetDateNow } from "./date";
  * This function retrieves the current date and updates each Person object
  * by adding an `ExecutionDate` property with the current date value.
  */
-export const addExecutionDate = (people: Person[]) => {
+export const addExecutionDate = (people: Person[]): Person[] => {
   const executionDate = handleGetDateNow();
   return people.map((person) => ({
     ...person,
