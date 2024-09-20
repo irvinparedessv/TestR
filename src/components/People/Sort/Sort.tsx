@@ -16,8 +16,8 @@ const Sort = ({ sortField, setSortField }: SortProps) => {
         onChange={(e) => setSortField(e.target.value as keyof Person)}
       >
         <option value="Name">Name</option>
-        <option value="Favorite Movie">Favorite Movie</option>
         <option value="Favorite Food">Favorite Food</option>
+        <option value="Favorite Movie">Favorite Movie</option>
         <option value="Status">Status</option>
       </select>
     </div>
